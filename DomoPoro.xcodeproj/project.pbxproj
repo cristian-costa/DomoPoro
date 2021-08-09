@@ -13,6 +13,7 @@
 		402F566726B9FA1D000CDA7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402F566526B9FA1D000CDA7A /* Main.storyboard */; };
 		402F566926B9FA20000CDA7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 402F566826B9FA20000CDA7A /* Assets.xcassets */; };
 		402F566C26B9FA20000CDA7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402F566A26B9FA20000CDA7A /* LaunchScreen.storyboard */; };
+		402F567626BA0557000CDA7A /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F567526BA0557000CDA7A /* TimeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		402F566826B9FA20000CDA7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		402F566B26B9FA20000CDA7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		402F566D26B9FA20000CDA7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		402F567526BA0557000CDA7A /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,38 @@
 			children = (
 				402F565F26B9FA1D000CDA7A /* AppDelegate.swift */,
 				402F566126B9FA1D000CDA7A /* SceneDelegate.swift */,
-				402F566326B9FA1D000CDA7A /* ViewController.swift */,
-				402F566526B9FA1D000CDA7A /* Main.storyboard */,
+				402F567826BA0560000CDA7A /* Model */,
+				402F567326B9FA2E000CDA7A /* Controllers */,
+				402F567426B9FA4B000CDA7A /* View */,
 				402F566826B9FA20000CDA7A /* Assets.xcassets */,
 				402F566A26B9FA20000CDA7A /* LaunchScreen.storyboard */,
 				402F566D26B9FA20000CDA7A /* Info.plist */,
 			);
 			path = DomoPoro;
+			sourceTree = "<group>";
+		};
+		402F567326B9FA2E000CDA7A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				402F566326B9FA1D000CDA7A /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		402F567426B9FA4B000CDA7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				402F566526B9FA1D000CDA7A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		402F567826BA0560000CDA7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				402F567526BA0557000CDA7A /* TimeManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +166,7 @@
 			files = (
 				402F566426B9FA1D000CDA7A /* ViewController.swift in Sources */,
 				402F566026B9FA1D000CDA7A /* AppDelegate.swift in Sources */,
+				402F567626BA0557000CDA7A /* TimeManager.swift in Sources */,
 				402F566226B9FA1D000CDA7A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

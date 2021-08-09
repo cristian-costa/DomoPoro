@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DomoPoro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Diseño sin título (2)" translatesAutoresizingMaskIntoConstraints="NO" id="bgx-q5-Zzl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="225" id="9R9-L0-ikU"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25:00" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OiY-Z1-RWD">
+                                <rect key="frame" x="132" y="77.5" width="150" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="0GW-sG-eUp"/>
+                                    <constraint firstAttribute="height" constant="70" id="Aol-3N-zRA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5TJ-Pm-hdm">
+                                <rect key="frame" x="16" y="162" width="382" height="2.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1.5" id="roN-sD-RvS"/>
+                                </constraints>
+                                <color key="progressTintColor" red="0.80546921490000001" green="1" blue="0.85767155890000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" systemColor="opaqueSeparatorColor"/>
+                            </progressView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUU-6m-2Pl">
+                                <rect key="frame" x="16" y="241" width="382" height="207"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work Duration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIp-yj-Amx">
+                                        <rect key="frame" x="16" y="16" width="350" height="22"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="Dbw-bH-iaT">
+                                        <rect key="frame" x="16" y="46" width="350" height="161"/>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="HIp-yj-Amx" secondAttribute="trailing" constant="16" id="7HP-Ex-0WT"/>
+                                    <constraint firstAttribute="height" constant="207" id="C1a-TN-wWS"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dbw-bH-iaT" secondAttribute="bottom" id="F5J-0g-Qz1"/>
+                                    <constraint firstItem="Dbw-bH-iaT" firstAttribute="leading" secondItem="oUU-6m-2Pl" secondAttribute="leading" constant="16" id="Fjw-r0-wkx"/>
+                                    <constraint firstItem="Dbw-bH-iaT" firstAttribute="top" secondItem="HIp-yj-Amx" secondAttribute="bottom" constant="8" id="JiO-ox-tnv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dbw-bH-iaT" secondAttribute="trailing" constant="16" id="gc3-HE-3Hx"/>
+                                    <constraint firstItem="HIp-yj-Amx" firstAttribute="top" secondItem="oUU-6m-2Pl" secondAttribute="top" constant="16" id="hTZ-cF-OYL"/>
+                                    <constraint firstItem="HIp-yj-Amx" firstAttribute="leading" secondItem="oUU-6m-2Pl" secondAttribute="leading" constant="16" id="vAl-F7-yAH"/>
+                                    <constraint firstAttribute="bottom" secondItem="HIp-yj-Amx" secondAttribute="bottom" constant="169" id="xd0-IR-4Ev"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="LvT-tk-2bT">
+                                <rect key="frame" x="16" y="759" width="382" height="60"/>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.90196078431372551" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="tWf-pQ-0xc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="Start !">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UK5-jd-LIf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oUU-6m-2Pl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4ok-zU-hZq"/>
+                            <constraint firstItem="5TJ-Pm-hdm" firstAttribute="centerX" secondItem="bgx-q5-Zzl" secondAttribute="centerX" id="7fT-64-2FF"/>
+                            <constraint firstItem="bgx-q5-Zzl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dad-hU-gkJ"/>
+                            <constraint firstItem="LvT-tk-2bT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="E1b-sn-EIm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oUU-6m-2Pl" secondAttribute="trailing" constant="16" id="Evl-ua-S6z"/>
+                            <constraint firstItem="oUU-6m-2Pl" firstAttribute="top" secondItem="bgx-q5-Zzl" secondAttribute="bottom" constant="16" id="GV3-cO-t2S"/>
+                            <constraint firstAttribute="trailing" secondItem="5TJ-Pm-hdm" secondAttribute="trailing" constant="16" id="J7b-xA-hqy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LvT-tk-2bT" secondAttribute="bottom" constant="43" id="QzN-oi-eB0"/>
+                            <constraint firstItem="OiY-Z1-RWD" firstAttribute="centerY" secondItem="bgx-q5-Zzl" secondAttribute="centerY" id="aXq-bO-woG"/>
+                            <constraint firstItem="OiY-Z1-RWD" firstAttribute="centerX" secondItem="bgx-q5-Zzl" secondAttribute="centerX" id="aou-Jb-9Ds"/>
+                            <constraint firstItem="bgx-q5-Zzl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="elo-js-X6g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LvT-tk-2bT" secondAttribute="trailing" constant="16" id="gXr-qI-0oz"/>
+                            <constraint firstItem="5TJ-Pm-hdm" firstAttribute="centerY" secondItem="bgx-q5-Zzl" secondAttribute="centerY" constant="50" id="ucV-PM-9zF"/>
+                            <constraint firstItem="5TJ-Pm-hdm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="z7s-Ce-JOJ"/>
+                            <constraint firstItem="bgx-q5-Zzl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zOd-dF-KFZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressBar" destination="5TJ-Pm-hdm" id="JaG-Cy-cYX"/>
+                        <outlet property="startBtnLabel" destination="LvT-tk-2bT" id="Wp2-5X-fOa"/>
+                        <outlet property="timeLabel" destination="OiY-Z1-RWD" id="TCy-sw-xRK"/>
+                        <outlet property="timePicker" destination="Dbw-bH-iaT" id="Xwd-Ug-fGl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Diseño sin título (2)" width="500" height="500"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
